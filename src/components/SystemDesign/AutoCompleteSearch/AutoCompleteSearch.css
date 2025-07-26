@@ -1,0 +1,28 @@
+.searchContainer{
+    text-align: center;
+}
+
+.inputBox{
+    padding: 5px;
+    width: 500px;
+}
+
+.resultsContainer{
+    width: 500px;
+    margin: auto;
+    border: 1px solid black;
+    padding: 5px;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.results{
+   display: block;
+   text-align: left;
+   padding: 3px;
+}
+
+.results:hover, .highlighted{
+    background-color: aliceblue;
+    cursor: pointer;
+}
