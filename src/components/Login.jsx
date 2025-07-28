@@ -11,7 +11,7 @@ const Login = ({ onLogin }) => {
     e.preventDefault();
     if (username && password) {
       onLogin(); // update App state
-      navigate('/autoSearch'); // go to autoSearch page
+      navigate('/dashboard'); // go to autoSearch page
     }
   };
 
