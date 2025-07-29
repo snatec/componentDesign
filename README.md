@@ -32,3 +32,11 @@ Featuring:
 -> Navigation keeping data persistant
 -> Error handle messages
 -> Next, previous buttons added
+
+================================================================================
+
+3) Progress Bar, url:  http://localhost:3000/progressBar
+
+Featuring:
+
+-> Animation
