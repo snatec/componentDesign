@@ -4,7 +4,8 @@ import './Dashboard.css';
 const Dashboard = () => {
   const links = [
     { name: 'autosearch', url: '/autosearch' },
-    { name: 'tabForm', url: '/tabForm' }
+    { name: 'tabForm', url: '/tabForm' },
+    { name: 'progressBar', url: '/progressBar' }
   ];
 
   return (
