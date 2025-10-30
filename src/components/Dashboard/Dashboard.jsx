@@ -5,7 +5,9 @@ const Dashboard = () => {
   const links = [
     { name: 'autosearch', url: '/autosearch' },
     { name: 'tabForm', url: '/tabForm' },
-    { name: 'progressBar', url: '/progressBar' }
+    { name: 'progressBar', url: '/progressBar' },
+    { name: 'inputChip', url: '/inputChip' },
+    { name: 'accordion', url: '/accordion' }
   ];
 
   return (

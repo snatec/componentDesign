@@ -1,5 +1,6 @@
 import './ProgressBar.css'; // Assuming you have some styles for this component
 import ProgressBar from './ProgressBar';
+import React from 'react';
 
 const ProgressBarMain = () => {
     const bars= [5,10,30,50,70,90,100,0];
