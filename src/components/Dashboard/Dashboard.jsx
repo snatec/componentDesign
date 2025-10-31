@@ -7,7 +7,8 @@ const Dashboard = () => {
     { name: 'tabForm', url: '/tabForm' },
     { name: 'progressBar', url: '/progressBar' },
     { name: 'inputChip', url: '/inputChip' },
-    { name: 'accordion', url: '/accordion' }
+    { name: 'accordion', url: '/accordion' },
+    { name: 'todoList', url: '/todoList' }
   ];
 
   return (

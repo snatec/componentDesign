@@ -43,4 +43,22 @@ Featuring:
 
 ================================================================================
 
-4) 
+4) Accordion, url: http://localhost:3000/accordion
+
+Question and requirements:
+
+https://www.youtube.com/watch?v=88R1pOvvFjg&list=PLlasXeu85E9cciv04MYWscodnbRFqACsH&index=10
+
+https://namastedev.com/practice/accordion
+
+================================================================================
+
+5) TodoList, url: http://localhost:3000/todoList
+
+Question and requirements:
+
+https://www.youtube.com/watch?v=DdX-nTv_VYo&list=PLlasXeu85E9cciv04MYWscodnbRFqACsH&index=9
+
+https://namastedev.com/practice/todo-list
+
+================================================================================

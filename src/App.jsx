@@ -6,6 +6,7 @@ import TabForm from './components/SystemDesign/TabForm/TabForm';
 import ProgressBarMain from './components/SystemDesign/ProgressBar/ProgressBarMain';
 import InputChip from './components/SystemDesign/InputChip/InputChip';
 import AccordianMain from './components/SystemDesign/Accordion/AccordianMain';
+import TodoList from './components/SystemDesign/TodoList/TodoList';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/progressBar" element={<ProgressBarMain/>} />
         <Route path="/inputChip" element={<InputChip/>} />
         <Route path="/accordian" element={<AccordianMain/>} />
+        <Route path="/todoList" element={<TodoList/>} />
       </Routes>
     </Router>
   );
