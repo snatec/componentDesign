@@ -7,6 +7,8 @@ const todoList = () => {
     const [todoList, setTodolist] = useState([]);
 
     const addTodoItem = () => {
+        if(input.trim() == '') return;
+
         const Item = {
             id: todoList.length+1, // starting 1,then 2
             text: input,
