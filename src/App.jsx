@@ -7,7 +7,7 @@ import ProgressBarMain from './components/SystemDesign/ProgressBar/ProgressBarMa
 import InputChip from './components/SystemDesign/InputChip/InputChip';
 import AccordianMain from './components/SystemDesign/Accordion/AccordianMain';
 import TodoList from './components/SystemDesign/TodoList/TodoList';
-import Pagination from './components/SystemDesign/Pagination/Pagination';
+import PaginationMain from './components/SystemDesign/PaginationMain/PaginationMain';
 
 const App = () => {
   return (
@@ -20,7 +20,7 @@ const App = () => {
         <Route path="/inputChip" element={<InputChip/>} />
         <Route path="/accordian" element={<AccordianMain/>} />
         <Route path="/todoList" element={<TodoList/>} />
-        <Route path="/pagination" element={<Pagination/>} />
+        <Route path="/pagination" element={<PaginationMain/>} />
       </Routes>
     </Router>
   );

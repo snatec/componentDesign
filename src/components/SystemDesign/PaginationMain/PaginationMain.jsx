@@ -10,10 +10,12 @@
 */
 
 import React,{useEffect, useState} from 'react';
-import './Pagination.css';
-import productDataFile from './product.json';
+import './PageComponent.css';
+import ProductCard from './ProductCard';
+import Pagination from './Pagination';
+// import productDataFile from './product.json';
 
-const Pagination = () => {
+const PaginationMain = () => {
 
 // const productData = productDataFile.products; //for config file
     const [productData, setProductData] = useState([]);
@@ -75,13 +77,13 @@ const Pagination = () => {
     return(
         <div className='container'>
         <h1>Pagination</h1>
-        <div className='pagination-container'>
-            <button disabled={currentPage==0} className='pageNumber' onClick={(item)=> goToPrevPage(item)}>◀️</button>
-            {[...Array(numberOfPages).keys()].map((item)=>(
-            <button className={'pageNumber ' + (item === currentPage ? 'pageNumberActive' : '')} key={item} onClick={()=> setCurrentPage(item)}>{item}</button>
-            ))}
-            <button disabled={currentPage==numberOfPages-1} className='pageNumber' onClick={(item)=> goToNextPage(item)}>▶️</button>
-        </div>
+        <Pagination 
+            currentPage={currentPage} 
+            numberOfPages={numberOfPages}
+            goToPrevPage={goToPrevPage}
+            goToNextPage={goToNextPage}
+            setCurrentPage={setCurrentPage}
+        />
         {productData && productData.length != 0 ?
             <div className='product-container'>{productData && productData.slice(start,end).map(item=> 
                 (
@@ -93,13 +95,4 @@ const Pagination = () => {
     )
 }
 
-export default Pagination;
-
-const ProductCard = ({title,image}) => {
-    return (
-        <div className='product-card'>
-            <div>{title}</div>
-            <img src={image} alt={title} width={180}/>
-        </div>
-    )
-}
+export default PaginationMain;
