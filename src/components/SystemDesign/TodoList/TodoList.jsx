@@ -24,9 +24,26 @@ const todoList = () => {
               }))
     }
 
+    const handleDelete = (id) => {
+
+        setTodolist(todoList.filter(item => item.id !== id))
+    }
+
+    const handleKeyDown = (e) => {
+        if(e.key === 'Enter'){
+            addTodoItem();
+        }
+    }
+
     return (
         <div>
-            <input type='text' value={input} placeholder='Enter todo' onChange={(e) => setInput(e.target.value)}/>
+            <input 
+                type='text' 
+                value={input} 
+                placeholder='Enter todo' 
+                onChange={(e) => setInput(e.target.value)}
+                onKeyDown={(e)=>handleKeyDown(e)}
+            />
             <button onClick={()=> addTodoItem()}>Add</button>
             {todoList.map((item) => {
                 return(
@@ -34,10 +51,9 @@ const todoList = () => {
                     <li key={item.id}>
                         <input type='checkbox' checkbox={item.completed} onChange={()=> toggleCompleted(item.id)}/>
                         <span className={item.completed ? 'strikeThrough' : ''}>{item.text}</span>
-                        <button>delete</button>
+                        <button onClick={()=> handleDelete(item.id)}>delete</button>
                     </li>
                 </ul>
-
             )
             })}
         </div>
