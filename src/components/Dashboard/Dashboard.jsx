@@ -8,7 +8,8 @@ const Dashboard = () => {
     { name: 'progressBar', url: '/progressBar' },
     { name: 'inputChip', url: '/inputChip' },
     { name: 'accordion', url: '/accordion' },
-    { name: 'todoList', url: '/todoList' }
+    { name: 'todoList', url: '/todoList' },
+    { name: 'pagination', url: '/pagination' }
   ];
 
   return (
