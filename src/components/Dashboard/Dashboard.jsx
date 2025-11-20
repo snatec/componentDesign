@@ -9,7 +9,8 @@ const Dashboard = () => {
     { name: 'inputChip', url: '/inputChip' },
     { name: 'accordion', url: '/accordion' },
     { name: 'todoList', url: '/todoList' },
-    { name: 'pagination', url: '/pagination' }
+    { name: 'pagination', url: '/pagination' },
+    { name: 'otpInput', url: '/otpInput' }
   ];
 
   return (

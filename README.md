@@ -62,3 +62,23 @@ https://www.youtube.com/watch?v=DdX-nTv_VYo&list=PLlasXeu85E9cciv04MYWscodnbRFqA
 https://namastedev.com/practice/todo-list
 
 ================================================================================
+
+6) Pagination, url: http://localhost:3000/pagination
+
+Question and requirements:
+
+https://www.youtube.com/watch?v=J-QIayOSDN8&list=PLlasXeu85E9cciv04MYWscodnbRFqACsH&index=2&pp=iAQB
+
+https://namastedev.com/practice/pagination
+
+================================================================================
+
+6) OTP Input, url: http://localhost:3000/pagination
+
+Question and requirements:
+
+https://www.youtube.com/watch?v=usVdJONI99k&list=PLlasXeu85E9cciv04MYWscodnbRFqACsH&index=6
+
+https://namastedev.com/practice/otp-input-component
+
+================================================================================

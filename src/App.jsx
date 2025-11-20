@@ -8,6 +8,7 @@ import InputChip from './components/SystemDesign/InputChip/InputChip';
 import AccordianMain from './components/SystemDesign/Accordion/AccordianMain';
 import TodoList from './components/SystemDesign/TodoList/TodoList';
 import PaginationMain from './components/SystemDesign/PaginationMain/PaginationMain';
+import OtpInput from './components/SystemDesign/OtpInput/OtpInput';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/accordian" element={<AccordianMain/>} />
         <Route path="/todoList" element={<TodoList/>} />
         <Route path="/pagination" element={<PaginationMain/>} />
+        <Route path="/otpInput" element={<OtpInput/>} />
       </Routes>
     </Router>
   );
