@@ -48,7 +48,7 @@ function tatkalTicketBooking() {
 }
 
 tatkalTicketBooking()
-  .then((amt) => {
+  .then((amt) => { // inside then is always resolve method
     console.log(`Thanks friend, I will transfer the amt ${amt}`);
     return amt; //.then() only receives a value if the previous .then() RETURNS a value.
   })
