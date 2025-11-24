@@ -82,3 +82,7 @@ https://www.youtube.com/watch?v=usVdJONI99k&list=PLlasXeu85E9cciv04MYWscodnbRFqA
 https://namastedev.com/practice/otp-input-component
 
 ================================================================================
+
+Consist of Javascript concepts: IN JavaScript folder
+
+================================================================================
