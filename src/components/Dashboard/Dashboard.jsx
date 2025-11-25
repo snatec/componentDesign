@@ -10,7 +10,9 @@ const Dashboard = () => {
     { name: 'accordion', url: '/accordion' },
     { name: 'todoList', url: '/todoList' },
     { name: 'pagination', url: '/pagination' },
-    { name: 'otpInput', url: '/otpInput' }
+    { name: 'otpInput', url: '/otpInput' },
+    { name: 'filters', url: '/filters' },
+    { name: 'carousel', url: '/carousel' },
   ];
 
   return (

@@ -9,6 +9,8 @@ import AccordianMain from './components/SystemDesign/Accordion/AccordianMain';
 import TodoList from './components/SystemDesign/TodoList/TodoList';
 import PaginationMain from './components/SystemDesign/PaginationMain/PaginationMain';
 import OtpInput from './components/SystemDesign/OtpInput/OtpInput';
+import Filters from './components/SystemDesign/Filters/Filters';
+import Carousel from './components/SystemDesign/Carousel/Carousel';
 
 const App = () => {
   return (
@@ -23,6 +25,8 @@ const App = () => {
         <Route path="/todoList" element={<TodoList/>} />
         <Route path="/pagination" element={<PaginationMain/>} />
         <Route path="/otpInput" element={<OtpInput/>} />
+        <Route path="/filters" element={<Filters/>} />
+        <Route path="/carousel" element={<Carousel/>} />
       </Routes>
     </Router>
   );
