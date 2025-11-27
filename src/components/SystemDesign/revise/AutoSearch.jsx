@@ -6,6 +6,7 @@ export default function App() {
     const [results, setResults] = useState([]);
     const [cache, setCache] = useState({}); // input: result
     const [highlightedIndex, setHightlightedIndex] = useState(-1);
+    
     const fetchData = async() => {
 
         if(cache[inputValue]) {

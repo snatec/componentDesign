@@ -11,6 +11,8 @@ import PaginationMain from './components/SystemDesign/PaginationMain/PaginationM
 import OtpInput from './components/SystemDesign/OtpInput/OtpInput';
 import Filters from './components/SystemDesign/Filters/Filters';
 import Carousel from './components/SystemDesign/Carousel/Carousel';
+import InfinteScroll from './components/SystemDesign/InfinteScroll/InfinteScroll';
+import CallModal from './components/SystemDesign/Modal/CallModal';
 
 const App = () => {
   return (
@@ -27,6 +29,8 @@ const App = () => {
         <Route path="/otpInput" element={<OtpInput/>} />
         <Route path="/filters" element={<Filters/>} />
         <Route path="/carousel" element={<Carousel/>} />
+        <Route path="/infinteScroll" element={<InfinteScroll pageSize={10}/>} />
+        <Route path="/modal" element={<CallModal pageSize={10}/>} />
       </Routes>
     </Router>
   );

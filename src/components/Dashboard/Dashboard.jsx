@@ -13,6 +13,8 @@ const Dashboard = () => {
     { name: 'otpInput', url: '/otpInput' },
     { name: 'filters', url: '/filters' },
     { name: 'carousel', url: '/carousel' },
+    { name: 'infinteScroll', url: '/infinteScroll' },
+    { name: 'modal', url: '/modal' },
   ];
 
   return (
@@ -20,7 +22,8 @@ const Dashboard = () => {
       <h1 className="dashboard-title">My Dashboard</h1>
       <ul className="dashboard-links">
         {links.map((link, index) => (
-          <li key={index}>
+          <li key={index} className="dashboard-item">
+            <span>{index+1}.</span>
             <a href={link.url} className="dashboard-link">
               {link.name}
             </a>

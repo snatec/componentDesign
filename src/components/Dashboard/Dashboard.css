@@ -37,3 +37,12 @@
   background-color: #e1ecf9;
   border-color: #4a90e2;
 }
+
+.dashboard-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+  white-space: nowrap; /* 👈 prevents breaking into next line */
+  justify-content: center;
+}

@@ -1,0 +1,56 @@
+.dialog{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+}
+
+.dialogBackdrop{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    animation: showDialog 0.3s linear forwards;
+}
+
+.dialogContent{
+    background-color: aliceblue;
+    padding: 20px;
+    max-width: 80vw;
+    max-height: 60vh;
+    overflow: auto;
+    z-index: 3;
+    position: relative;
+    animation: showDialog 0.3s linear forwards;
+}
+
+.closeContent{
+   position: absolute;
+   top: 5px;
+   right: 12px;
+   cursor: pointer;
+}
+
+@keyframes showDialog {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+button:focus {
+  outline: none;
+}
+
+.myButton:focus-visible{
+  outline: 3px solid #4d90fe;
+  border-radius: 4px;
+  outline-offset: 3px;
+}

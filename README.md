@@ -86,3 +86,14 @@ https://namastedev.com/practice/otp-input-component
 Consist of Javascript concepts: IN JavaScript folder
 
 ================================================================================
+
+6) OTP Input, url: http://localhost:3000/modal
+
+Question and requirements:
+
+https://www.youtube.com/watch?v=Ii4AcwLHgEA
+
+linear forwards; //forwards ensure after animation element css remains original one
+
+================================================================================
+
