@@ -36,7 +36,7 @@ const Modal = ({onClose, children}) => {
 
   const trapFocus = (e) => {
     //    const focusElementList = dialogRef.current.querySelectorAll('button, [href]');
-       const focusElementList = dialogRef.current.querySelectorAll('.myButton, .myLink');
+       const focusElementList = dialogRef.current.querySelectorAll('.myButton, .myLink, .closeContent');
 
        if(focusElementList.length == 0) return;
 
@@ -62,19 +62,36 @@ const Modal = ({onClose, children}) => {
 // }, []); // not working
 
 useEffect(() => {
+  // Delay until modal is fully rendered
   setTimeout(() => {
-    const firstFocusable = dialogRef.current.querySelector('.myButton, .myLink');
-    if (firstFocusable) firstFocusable.focus();
-  }, 0);
+
+    const firstButton = dialogRef.current?.querySelector('.myButton');
+    const closeBtn = dialogRef.current?.querySelector('.closeContent');
+
+    const elem = firstButton || closeBtn;
+    if (!elem) return;
+
+    // Apply focus immediately
+    elem.focus();
+
+    // Add highlight class after focus so it triggers animation
+    elem.classList.add("focus-highlight");
+
+    // Remove highlight after 1.5 seconds (adjust time if needed)
+    const timer = setTimeout(() => {
+      elem.classList.remove("focus-highlight");
+    }, 1500);
+
+    return () => clearTimeout(timer);
+
+  }, 50);
 }, []);
 
-
-  
     return(
         <div className='dialog'>
-            <button className='dialogBackdrop' onClick={()=> onClose()}></button>
-                <div className='dialogContent' data-focus ref={dialogRef}>
-                    <div className='closeContent' data-focus onClick={()=> onClose()}  tabIndex="-1">x</div>
+            <div className='dialogBackdrop' onClick={()=> onClose()}></div>
+                <div className='dialogContent' ref={dialogRef} aria-modal="true">
+                    <button className='closeContent' onClick={()=> onClose()}>x</button>
                     {children}
             </div>
         </div>

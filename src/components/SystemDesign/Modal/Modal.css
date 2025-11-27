@@ -45,12 +45,13 @@
     }
 }
 
-button:focus {
-  outline: none;
-}
-
-.myButton:focus-visible{
+.focus-highlight {
   outline: 3px solid #4d90fe;
+  outline-offset: 6px;
+  box-shadow: 0 0 10px rgba(77, 144, 254, 0.5);
   border-radius: 4px;
-  outline-offset: 3px;
+
+  transition: outline-offset 0.25s ease, 
+              outline-width 0.25s ease, 
+              box-shadow 0.25s ease;
 }
