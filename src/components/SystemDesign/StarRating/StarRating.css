@@ -1,0 +1,15 @@
+.each-star{
+    cursor: pointer;
+}
+
+.color-star{
+    filter: hue-rotate(90deg) brightness(1.3);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
