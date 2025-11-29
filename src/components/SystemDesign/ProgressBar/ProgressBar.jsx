@@ -9,7 +9,7 @@ const ProgressBar = ({progress}) => {
         setTimeout(()=> setAnimatedProgress(progress), 100)
     },[progress])
     return (
-        <div className='container'>
+        // <div className='container'>
         <div className='outer'>
             <div className='inner' 
                 style={{
@@ -25,9 +25,12 @@ const ProgressBar = ({progress}) => {
             >
                 {progress}%
             </div>
-        </div>
+        {/* </div> */}
         </div>
     )
 }
 
 export default ProgressBar
+
+// transform: translateX(50%);  /* moves right */
+// transform: translateX(-50%); /* moves left */

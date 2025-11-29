@@ -97,3 +97,34 @@ linear forwards; //forwards ensure after animation element css remains original 
 
 ================================================================================
 
+7) Drag Drop, url: http://localhost:3000/dragDrop
+
+https://www.youtube.com/watch?v=la2QrsXAEu4
+
+Rules for drag and drop
+
+1) By default elements cant be dragged. We have to explicitely tell browser that we have to drag a element. (security purpose) [draggable = true]
+
+2) Similarly drop also explicitely have to tell browser.
+
+3) Even though both are enabled, browser still blocks the drop event. [dragover(should use e.preventDefault, stop default mechanisim of browser ) use not just drop]
+----------------------------------------------------------------------------------------
+=> Events when we are dragging source elements:
+
+dragStart -> drag -> dragEnd
+
+dragStart-> fired once
+
+drag-> fired continously
+
+dragEnd-> fired once when drop completes or get cancelled (stoped dragging)
+----------------------------------------------------------------------------------------
+=> Events when we are dropping source elements:
+
+dragEnter-> dragOver -> dragLeave -> drop
+
+dragEnter -> teddy enter basket zone (like in css we can change background saying valid target etc)
+
+dragOver -> fired continously like if when teddy you keep moving inside basket
+
+dragLeave -> fired once. left the basket ie target

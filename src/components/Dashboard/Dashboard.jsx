@@ -15,6 +15,8 @@ const Dashboard = () => {
     { name: 'carousel', url: '/carousel' },
     { name: 'infinteScroll', url: '/infinteScroll' },
     { name: 'modal', url: '/modal' },
+    { name: 'dragDrop', url: '/dragDrop' },
+    { name: 'fileExplorer', url: '/fileExplorer' }
   ];
 
   return (

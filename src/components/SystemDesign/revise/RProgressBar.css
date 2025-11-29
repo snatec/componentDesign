@@ -1,0 +1,13 @@
+.outerContainer{
+    border: 1px solid black;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.innerContainer{
+    background-color: green;
+    text-align: right;
+    height: 25px;
+    transition: 0.5s ease-in;
+}

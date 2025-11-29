@@ -11,6 +11,9 @@ const InputChip = () => {
          setChips(prev => [...prev, input]);
          setInput("");
        }
+       if (e.key === "Backspace" && !input && chips.length > 0) {
+          setChips(chips.slice(0, -1));
+        }
     }
 
     const handleRemoveChip = (index) => {
