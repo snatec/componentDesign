@@ -20,6 +20,7 @@ const RoutingRevise = () => {
         <Route path="/carosoulRevise" element={<RCarosoul/>} />
         <Route path="/infinteScrollRevise" element={<RInfiniteScroll/>} />
         <Route path="/filtersRevise" element={<RFilters/>} />
+        <Route path="/autoSearchRevise" element={<RAutoSearch/>} />
       </Routes>
   );
 };

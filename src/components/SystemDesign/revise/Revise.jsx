@@ -10,7 +10,8 @@ const Revise = () => {
     { name: 'modalRevise', url: '/modalRevise' },
     { name: 'carosoulRevise', url: '/carosoulRevise' },
     { name: 'infinteScrollRevise', url: '/infinteScrollRevise' },
-    { name: 'filtersRevise', url: '/filtersRevise' }
+    { name: 'filtersRevise', url: '/filtersRevise' },
+    { name: 'autoSearchRevise', url: '/autoSearchRevise' }
   ];
 
   return (
