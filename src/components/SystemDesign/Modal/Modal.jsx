@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useLayoutEffect} from 'react';
+import React, {useEffect, useRef} from 'react';
 import "./Modal.css";
 
 const Modal = ({onClose, children}) => {
@@ -48,7 +48,7 @@ const Modal = ({onClose, children}) => {
          e.preventDefault();
          lastFocus.focus();
        }
-       else if(!e.shiftKey && document.activeElement == lastFocus)
+       else if(!e.shiftKey && document.activeElement == lastFocus)// user pressed only tab not shift key
        {
          e.preventDefault();
          firstFocus.focus();

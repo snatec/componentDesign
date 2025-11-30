@@ -128,3 +128,24 @@ dragEnter -> teddy enter basket zone (like in css we can change background sayin
 dragOver -> fired continously like if when teddy you keep moving inside basket
 
 dragLeave -> fired once. left the basket ie target
+
+=========================================
+
+INFINITE SCROLL
+
+          ↑ Page above (scrolled past)
+────────────────────────────────────────
+[ Item 1 ]
+[ Item 2 ]
+[ Item 3 ]
+[ Item 4 ]
+[ Item 5 ]   ← Currently visible (inside viewport)
+────────────────────────────────────────
+[ Item 6 ]   ← This is the "last item" we are observing
+              (currently below viewport)
+────────────────────────────────────────
+          ↓ Page continues...
+
+viewport height (window.innerHeight) = 768px
+
+getBoundingClientRect().bottom of Item 6 = 1200px  (because it's lower down the page)

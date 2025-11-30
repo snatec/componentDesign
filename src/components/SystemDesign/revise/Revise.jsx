@@ -6,6 +6,11 @@ const Revise = () => {
     { name: 'accordianRevise', url: '/accordianRevise' },
     { name: 'progressBarRevise', url: '/progressBarRevise' },
     { name: 'inputChipRevise', url: '/inputChipRevise' },
+    { name: 'todolistRevise', url: '/todolistRevise' },
+    { name: 'modalRevise', url: '/modalRevise' },
+    { name: 'carosoulRevise', url: '/carosoulRevise' },
+    { name: 'infinteScrollRevise', url: '/infinteScrollRevise' },
+    { name: 'filtersRevise', url: '/filtersRevise' }
   ];
 
   return (
