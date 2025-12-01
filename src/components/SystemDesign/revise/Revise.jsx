@@ -11,7 +11,8 @@ const Revise = () => {
     { name: 'carosoulRevise', url: '/carosoulRevise' },
     { name: 'infinteScrollRevise', url: '/infinteScrollRevise' },
     { name: 'filtersRevise', url: '/filtersRevise' },
-    { name: 'autoSearchRevise', url: '/autoSearchRevise' }
+    { name: 'autoSearchRevise', url: '/autoSearchRevise' },
+    { name: 'multipleAccordianRevise', url: '/multipleAccordianRevise' }
   ];
 
   return (

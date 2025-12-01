@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-import "./styles.css";
+import React, { useState, useEffect } from "react";
 
 export default function App() {
   const [input, setInput] = useState("");

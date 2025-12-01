@@ -8,6 +8,8 @@ import RModal from '../components/SystemDesign/revise/RModal';
 import RCarosoul from '../components/SystemDesign/revise/RCarosoul';
 import RInfiniteScroll from '../components/SystemDesign/revise/RInfiniteScroll';
 import RFilters from '../components/SystemDesign/revise/RFilters';
+import RAutoSearch from '../components/SystemDesign/revise/RAutoSearch';
+import RMultipleAccordian from '../components/SystemDesign/revise/RMultipleAccordian';
 
 const RoutingRevise = () => {
   return (
@@ -21,6 +23,7 @@ const RoutingRevise = () => {
         <Route path="/infinteScrollRevise" element={<RInfiniteScroll/>} />
         <Route path="/filtersRevise" element={<RFilters/>} />
         <Route path="/autoSearchRevise" element={<RAutoSearch/>} />
+        <Route path="/multipleAccordianRevise" element={<RMultipleAccordian/>} />
       </Routes>
   );
 };
