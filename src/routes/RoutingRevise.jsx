@@ -10,6 +10,7 @@ import RInfiniteScroll from '../components/SystemDesign/revise/RInfiniteScroll';
 import RFilters from '../components/SystemDesign/revise/RFilters';
 import RAutoSearch from '../components/SystemDesign/revise/RAutoSearch';
 import RMultipleAccordian from '../components/SystemDesign/revise/RMultipleAccordian';
+import ROtp from '../components/SystemDesign/revise/ROtp';
 
 const RoutingRevise = () => {
   return (
@@ -24,6 +25,7 @@ const RoutingRevise = () => {
         <Route path="/filtersRevise" element={<RFilters/>} />
         <Route path="/autoSearchRevise" element={<RAutoSearch/>} />
         <Route path="/multipleAccordianRevise" element={<RMultipleAccordian/>} />
+        <Route path="/otpRevise" element={<ROtp/>} />
       </Routes>
   );
 };

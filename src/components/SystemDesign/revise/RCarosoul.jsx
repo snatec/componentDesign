@@ -17,7 +17,7 @@ export default function RCarosoul() {
     },[]);
 
     const startAutoScroll = () => {
-        clearInterval(intervalRef.current);
+        // clearInterval(intervalRef.current);
         intervalRef.current = setInterval(()=>{
            setIndex(prevIndex => prevIndex == totalSlides-1 ? 0 : prevIndex+1);
         },2000)

@@ -27,7 +27,7 @@ const AutoCompleteSearch = () => {
   // useEffect: run when `input` changes, debounce fetch by 300ms
 
   useEffect(() => {
-     const timer = setTimeout(() => {fetchData()},300)
+     const timer = setTimeout(() => fetchData(),300)
      return () => {
       clearTimeout(timer);
      }

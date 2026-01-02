@@ -54,10 +54,10 @@ const Modal = ({onClose, children, heading}) => {
 
             //add css class for highlight
             
-  firstButton.classList.add('focus-highlight');
-const timer  = setTimeout(()=> {
-    firstButton.classList.remove('focus-highlight');
-},1500)   ;
+                firstButton.classList.add('focus-highlight');
+                const timer  = setTimeout(()=> {
+                    firstButton.classList.remove('focus-highlight');
+                },1500)   ;
 
             return()=> {
                 clearTimeout(timer);

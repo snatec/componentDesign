@@ -14,6 +14,11 @@ const OtpInput = () => {
         refArr.current && refArr.current[0].focus();
     },[])
 
+//   const handleOnChange = (value, index) => { //also correct
+//   const newValue = value.trim();
+//   setInputArr(prev => prev.map((item, i) => i === index ? newValue : item));
+// };
+
     const handleOnChange = (value,index) => {
 
      if(isNaN(value)) return; //Nan means Not a number
@@ -31,6 +36,7 @@ const OtpInput = () => {
 
     const handleKeyDown = (e,index) => {
         if(!e.target.value && e.key == 'Backspace'){
+             if(index > 0 && !e.target.value)
            refArr.current[index - 1].focus(); //first comes focus and then deletion ie backspace happens so if we dont put !e.target.value prev value gets deleted
            // so now if input box is empty only then focus prev index and do backspace/deletion
         }

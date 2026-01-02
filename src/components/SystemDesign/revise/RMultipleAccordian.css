@@ -1,0 +1,10 @@
+.container{
+    width: 300px;
+    margin-bottom: 10px
+}
+ .titleContainer{
+     display: flex;
+     justify-content: space-between;
+     border: 1px solid black;
+     padding: 10px;
+ }

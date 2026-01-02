@@ -30,3 +30,8 @@ With currying:
 add(1)(2)(3)
 Each function receives exactly one argument, making it easier to test and debug.
 
+https://www.youtube.com/watch?v=yoNm6ha8ty4&list=PLrdDvCsCDu0GU-SaBtfYQrzwVB0n9czfF
+
+https://www.youtube.com/watch?v=88NsoYaGvJk&list=PLnNsQf3QlMxXD9Vnd4SeIsO0WszaZoEg9&index=2
+
+https://www.youtube.com/watch?v=yoNm6ha8ty4&list=PLrdDvCsCDu0GU-SaBtfYQrzwVB0n9czfF

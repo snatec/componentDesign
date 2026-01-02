@@ -12,7 +12,8 @@ const Revise = () => {
     { name: 'infinteScrollRevise', url: '/infinteScrollRevise' },
     { name: 'filtersRevise', url: '/filtersRevise' },
     { name: 'autoSearchRevise', url: '/autoSearchRevise' },
-    { name: 'multipleAccordianRevise', url: '/multipleAccordianRevise' }
+    { name: 'multipleAccordianRevise', url: '/multipleAccordianRevise' },
+    { name: 'otpRevise', url: '/otpRevise' }
   ];
 
   return (
