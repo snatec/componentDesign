@@ -18,10 +18,17 @@ Returns a new array of same length
 Example
 const nums = [1, 2, 3];
 
-const doubled = nums.map(n => n * 2);
+const doubled = nums.map(item => item * 2);
 
 console.log(doubled); // [2, 4, 6]
 
+===========
+
+const num = [1,2,3];
+
+const doubled = num.forEach(item => item * 2);
+
+console.log(doubled); //undefined
 
 ✔ Original array remains unchanged
 ✔ Best when you need a new array
@@ -86,6 +93,35 @@ map is used to transform an array and returns a new array, whereas forEach is us
 SideEffect means
 
 A side effect is any operation that affects something outside the function, instead of just returning a value. like API calls, logging, updating variables, DOM manipulation
+=========================================
+For each uses:
+
+1️⃣ Logging
+num.forEach(item => console.log(item * 2));
+
+2️⃣ Mutating array intentionally
+const num = [1,2,3];
+
+num.forEach((item, index, arr)=> {
+    arr[index] = item * 2;
+});
+
+console.log(num);
+=============================================================================
+Example
+const nums = [1, 2, 3];
+
+const doubled = nums.map(item => item * 2);
+
+console.log(doubled); // [2, 4, 6]
+
+===========
+
+const num = [1,2,3];
+
+const doubled = num.forEach(item => item * 2);
+
+console.log(doubled); //undefined
 ==========================================================
 
 • Difference between call stack overflow and memory leaks

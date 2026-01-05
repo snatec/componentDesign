@@ -145,3 +145,4 @@ If primitives are immutable, how does x = 5 become x = 6?
 ✔ Answer:
 
 The variable is reassigned to a new value; the original value itself is never modified.
+Primitives are immutable, but variables are mutable.

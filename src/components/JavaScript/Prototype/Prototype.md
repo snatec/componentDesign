@@ -18,7 +18,7 @@ console.log(Function.getPrototypeof(dog));
 
 Example :
 object1 = { city:'mumbai' };
-object2 = Object.create(object1);
+object2 = Object.create(object1); //object1 becomes the prototype of object2
 object2.name = 'Shiv';
 console.log(object2.name + 'is from' + object2.city); // here when one couldn't find city property inside object2, it goes to find this property in the inherited object1.
 This is called inheritance of an object in javscript. This type of inheritance is different from the classical inheitance of oops. This type of inheritance is provided by Prototype Inheritance.
@@ -49,10 +49,6 @@ In JavaScript, there are different types of prototypes depending on how the obje
 Object Literals and new Object(): The prototype of objects created with {} syntax or new Object() is Object.prototype.
 Array Literals and new Array(): The prototype of arrays created with [] syntax or new Array() is Array.prototype.
 Date and RegExp: The prototype of objects created with new Date() and new RegExp() are Date.prototype and RegExp.prototype respectively.
-
-In JavaScript, every function has a prototype property that refers to an object known as Function.prototype
-
-Whenever we create object/ function/ methods/ array/ variable , these all are attached with some hidden properties, which we call prototype.
 
 if you want to know what hidden properties and methods are stored in a prototype object?
 Array.prototype
