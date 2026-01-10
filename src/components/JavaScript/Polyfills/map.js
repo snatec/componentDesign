@@ -34,7 +34,7 @@ if (!Array.prototype.myMap) {
     const arr = this; // this = fruits
 
     for (let i = 0; i < arr.length; i++) {
-      result.push(callback(arr[i], i, arr));
+      result.push(callback(arr[i], i, arr)); //do callback for each element
     }
 
     return result;

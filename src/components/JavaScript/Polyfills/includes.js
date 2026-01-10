@@ -4,7 +4,7 @@ const fruits = ['apple', 'mango', 'orange'];
 
 if(!Array.prototype.myIncludes){
     Array.prototype.myIncludes = function(searchElement) {
-        return this.indexOf(searchElement) !== -1;
+        return this.indexOf(searchElement) !== -1; //return -1 if NOT found
     }
 }
 

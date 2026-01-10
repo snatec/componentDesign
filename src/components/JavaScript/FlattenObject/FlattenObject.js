@@ -10,25 +10,42 @@ const obj = {
     }
 }
 
-console.log(flattenObj(obj,""))
+// console.log(flattenObj(obj,""))
+console.log(flattenObj(obj,"",{}))
 
-function flattenObj(obj, parent){
-   const output = {};
-        const generateFlatObjs = (obj, parent) => {
-             for(let key in obj){
-                const newParent = parent + key; //ie c.p //A //B //C //C.P //C.O //C.0.L //C.Q.0 //C.Q.1
-                const value = obj[key]; //12 //23 //OBJ //23 //OBJ //56 //1 //2
-                if(value !== null && typeof value === 'object'){
-                    generateFlatObjs(value, newParent + ".") //,C. //,C.0. //,C.Q.
-                }
-                else{
-                     output[newParent] = value;
-                    }
-            }
-        }
-   generateFlatObjs(obj,parent);
-   return output; //{ A: '12', B: 23, 'C.P': 23, 'C.O.L': 56, 'C.Q.0': 1, 'C.Q.1': 2 }
+// function flattenObj(obj, parent){
+//    const output = {};
+//         const generateFlatObjs = (obj, parent) => {
+//              for(let key in obj){
+//                 const newParent = parent + key; //ie c.p //A //B //C //C.P //C.O //C.0.L //C.Q.0 //C.Q.1
+//                 const value = obj[key]; //12 //23 //OBJ //23 //OBJ //56 //1 //2
+//                 if(value !== null && typeof value === 'object'){
+//                     generateFlatObjs(value, newParent + ".") //,C. //,C.0. //,C.Q.
+//                 }
+//                 else{
+//                      output[newParent] = value;
+//                     }
+//             }
+//         }
+//    generateFlatObjs(obj,parent);
+//    return output; //{ A: '12', B: 23, 'C.P': 23, 'C.O.L': 56, 'C.Q.0': 1, 'C.Q.1': 2 }
+// }
+
+//without closure ie optimised
+function flattenObj(obj, parent = "", output = {}) {
+  for (let key in obj) {
+    const newParent = parent ? parent + key : key;
+    const value = obj[key];
+
+    if (value !== null && typeof value === "object") {
+      flattenObj(value, newParent + ".", output);
+    } else {
+      output[newParent] = value;
+    }
+  }
+  return output;
 }
+
 
 //output:
 
