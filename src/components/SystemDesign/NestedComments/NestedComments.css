@@ -1,0 +1,27 @@
+.commentContainer{
+    display: flex;
+    gap: 20px;
+}
+
+.buttonClass{
+    display: flex;
+    gap: 10px;
+}
+
+.buttonClass .reply{
+    color: blue;
+}
+
+.buttonClass .cancel{
+    color: red;
+}
+
+.replyContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.postButton{
+    width: 100px;
+}

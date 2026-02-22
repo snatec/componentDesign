@@ -16,7 +16,11 @@ const Dashboard = () => {
     { name: 'infinteScroll', url: '/infinteScroll' },
     { name: 'modal', url: '/modal' },
     { name: 'dragDrop', url: '/dragDrop' },
-    { name: 'fileExplorer', url: '/fileExplorer' }
+    { name: 'fileExplorer', url: '/fileExplorer' },
+    { name: 'nestedComments', url: '/nestedComments' },
+    { name: 'grid', url: '/grid' },
+    {name: 'virtualImageList', url: '/virtualImageList'},
+    {name: 'seatSelection', url: '/seatSelection'}
   ];
 
   return (

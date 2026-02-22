@@ -16,6 +16,10 @@ import CallModal from '../components/SystemDesign/Modal/CallModal';
 import Revise from '../components/SystemDesign/revise/Revise';
 import DragDrop from '../components/SystemDesign/DragDrop/DragDrop';
 import FileExplorer from '../components/SystemDesign/FileExplorer/FileExplorer';
+import NestedComments from "../components/SystemDesign/NestedComments/NestedComments";
+import Grid from "../components/SystemDesign/Grid/Grid";
+import VirtualImageList from "../components/SystemDesign/VirtualImageList/VirtualImageList";
+import SeatSelection from "../components/SystemDesign/SeatSelection/SeatSelection";
 
 const RoutingDashboard = () => {
   return (
@@ -35,6 +39,10 @@ const RoutingDashboard = () => {
         <Route path="/modal" element={<CallModal/>} />
         <Route path='/dragDrop' element={<DragDrop/>} />
         <Route path='/fileExplorer' element={<FileExplorer/>} />
+        <Route path="/nestedComments" element={<NestedComments/>} />
+        <Route path="/grid" element={<Grid/>} />
+        <Route path='/virtualImageList' element={<VirtualImageList/>} />
+        <Route path='/seatSelection' element={<SeatSelection/>} />
         <Route path="/revise" element={<Revise/>} />
       </Routes>
   );

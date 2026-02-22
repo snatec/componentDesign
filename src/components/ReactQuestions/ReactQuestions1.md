@@ -721,3 +721,20 @@ export default function App() {
 
 ===========================================================================================================
 
+ 1️⃣ How would you optimize a React application rendering 100k+ items in a list?
+
+ 
+ 2️⃣ What strategies would you use to improve page load time for a global audience?
+ 3️⃣ You notice a memory leak in a production SPA—how do you identify and fix it?
+ 4️⃣ A component breaks when upgrading a library version—how do you manage dependencies?
+ 5️⃣ How would you debug a performance bottleneck in a React app using DevTools?
+ 6️⃣ You need to migrate a legacy frontend codebase to a modern framework—what’s your plan?
+ 7️⃣ How do you ensure secure handling of sensitive user data on the client side?
+ 8️⃣ Users report intermittent UI glitches in different browsers—how would you troubleshoot?
+ 9️⃣ A critical UI feature is failing during peak traffic—how do you mitigate the issue?
+ 🔟 How do you manage state in a complex app to avoid unnecessary re-renders?
+ 1️⃣1️⃣ How would you implement a robust frontend monitoring and logging system?
+ 1️⃣2️⃣ You need to render a large dataset without blocking the main thread—how do you approach it?
+ 1️⃣3️⃣ How would you implement A/B testing without affecting current users?
+ 1️⃣4️⃣ A CSS animation is janky on mobile devices—how do you identify and fix the issue?
+ 1️⃣5️⃣ How do you handle real-time updates in a React application efficiently?
