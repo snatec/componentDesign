@@ -28,11 +28,13 @@ export default function RCarosoul() {
     }
 
     const handlePrev = () => {
+        pauseAutoScroll();
         setIndex((prev) => (prev == 0 ? totalSlides -1 : prev -1));
         startAutoScroll(); // reset timer
     }
 
     const handleNext = () => {
+        pauseAutoScroll();
         setIndex(prev => (prev ==   totalSlides -1 ? 0 : prev + 1));
         startAutoScroll(); // reset timer
     }

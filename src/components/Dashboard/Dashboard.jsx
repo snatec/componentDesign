@@ -20,7 +20,8 @@ const Dashboard = () => {
     { name: 'nestedComments', url: '/nestedComments' },
     { name: 'grid', url: '/grid' },
     {name: 'virtualImageList', url: '/virtualImageList'},
-    {name: 'seatSelection', url: '/seatSelection'}
+    {name: 'seatSelection', url: '/seatSelection'},
+    {name: 'StarRating', url: '/StarRating'}
   ];
 
   return (

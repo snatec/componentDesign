@@ -1,82 +1,48 @@
-import React, { useState } from "react";
+import React,{ useState } from "react";
 
-export default function EditableGrid() {
-  const initialRows = 3;
-  const initialCols = 3;
+const Sheet = () => {
+    const [sheetData, setSheetData] = useState([
+        ["", "", ""],
+        ["", "", ""],
+        ["", "", ""],
+    ])
 
-  const createGrid = (rows, cols) => {
-    return Array.from({ length: rows }, function () {
-      return Array(cols).fill("");
-    });
-  };
+    const updateSheetCell = (rowIndex,colIndex, value) => {
+        const updatedSheet = sheetData.map((row, rowIdx)=> 
+            row.map((cell,colIdx)=> (rowIdx == rowIndex && colIdx == colIndex ?
+                                    value : cell))
+            )
+        //When you find the target cell → update it (value), Otherwise → keep old value (cell)
+        setSheetData(updatedSheet);
+    }
 
-  const [grid, setGrid] = useState(createGrid(initialRows, initialCols));
+    const handleAddRow = () => {
+        setSheetData([...sheetData, Array(sheetData[0].length).fill('')]);
+    }
 
-  // Update a single cell
-  const updateCell = (rowIndex, colIndex, value) => {
-    setGrid(function (prevGrid) {
-      return prevGrid.map(function (row, r) {
-        if (r !== rowIndex) return row;
-
-        return row.map(function (cell, c) {
-          if (c !== colIndex) return cell;
-          return value;
-        });
-      });
-    });
-  };
-
-  // Add new row
-  const addRow = () => {
-    setGrid(function (prev) {
-      const cols = prev[0].length;
-      return [...prev, Array(cols).fill("")];
-    });
-  };
-
-  // Add new column
-  const addColumn = () => {
-    setGrid(function (prev) {
-      return prev.map(function (row) {
-        return [...row, ""];
-      });
-    });
-  };
-
-  return (
-    <div style={{ padding: 20 }}>
-      <h2>Editable Grid</h2>
-
-      <div style={{ marginBottom: 10 }}>
-        <button onClick={addRow}>Add Row</button>
-        <button onClick={addColumn} style={{ marginLeft: 10 }}>
-          Add Column
-        </button>
-      </div>
-
-      <table border="1" cellPadding="5">
-        <tbody>
-          {grid.map(function (row, r) {
-            return (
-              <tr key={r}>
-                {row.map(function (cell, c) {
-                  return (
-                    <td key={c}>
-                      <input
-                        value={cell}
-                        onChange={function (e) {
-                          updateCell(r, c, e.target.value);
-                        }}
-                        aria-label={"Row " + (r + 1) + " Column " + (c + 1)}
-                      />
-                    </td>
-                  );
-                })}
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
-    </div>
-  );
+    const handleAddCol = () => {
+         setSheetData(sheetData.map((row)=> [...row, ''] ));
+    }
+    
+    return(
+       <div className='grid'>
+           {sheetData.map((row,rowIndex)=> (
+           <div className='row' key={rowIndex}>
+               {row.map((cell, colIndex)=> (
+                               <input 
+                                   key={`${rowIndex} - ${colIndex}`}
+                                   className='cell'
+                                   onChange= {(e)=> updateSheetCell(rowIndex,colIndex, e.target.value)}
+                                   value={cell}
+                                />
+                           ))} 
+           </div>))}
+           <div className='buttonDiv'>
+               <button onClick={()=> handleAddRow()}>Add Row</button>
+                <button  onClick={()=> handleAddCol()}>Add Coloumn</button>
+           </div>
+       </div>
+    )
 }
+
+export default Sheet;

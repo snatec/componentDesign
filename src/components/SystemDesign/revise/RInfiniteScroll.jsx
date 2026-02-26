@@ -31,7 +31,9 @@ const InfinteScroll = ({data, loading, setPageNo}) => {
         if(!data || data.length == 0 || loading) return;
 
         const observer = new IntersectionObserver((enteries)=> {
+            // console.log('entries',enteries)
             const entry = enteries[0];
+            // console.log('entry',entry)
         if(entry.isIntersecting && entry.target.getBoundingClientRect().bottom > window.innerHeight){
             observer.unobserve(entry.target);
             setPageNo(prev => prev+1);
