@@ -21,7 +21,8 @@ const Dashboard = () => {
     { name: 'grid', url: '/grid' },
     {name: 'virtualImageList', url: '/virtualImageList'},
     {name: 'seatSelection', url: '/seatSelection'},
-    {name: 'StarRating', url: '/StarRating'}
+    {name: 'starRating', url: '/starRating'},
+    {name: 'toastNotification', url: '/toastNotification'}
   ];
 
   return (

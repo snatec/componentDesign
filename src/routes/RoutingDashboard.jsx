@@ -21,6 +21,7 @@ import Grid from "../components/SystemDesign/Grid/Grid";
 import VirtualImageList from "../components/SystemDesign/VirtualImageList/VirtualImageList";
 import SeatSelection from "../components/SystemDesign/SeatSelection/SeatSelection";
 import StarRating from "../components/SystemDesign/StarRating/StarRating";
+import ToastNotification from "../components/SystemDesign/ToastNotification/ToastNotification";
 
 const RoutingDashboard = () => {
   return (
@@ -45,6 +46,7 @@ const RoutingDashboard = () => {
         <Route path='/virtualImageList' element={<VirtualImageList/>} />
         <Route path='/seatSelection' element={<SeatSelection/>} />
         <Route path='/starRating' element={<StarRating/>} />
+        <Route path='/toastNotification' element={<ToastNotification/>} />
         <Route path="/revise" element={<Revise/>} />
       </Routes>
   );
