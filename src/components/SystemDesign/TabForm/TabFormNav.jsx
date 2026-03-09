@@ -21,7 +21,7 @@ const TabFormNav = () => {
                     err.email = 'email is not valid'
 
                 setError(err);
-                return err.name || err.age || err.email ? false : true //if no errors, return true
+                return err.name || err.age || err.email ? false : true //if no errors, return true, //false means validation failed
             }
         },
         {

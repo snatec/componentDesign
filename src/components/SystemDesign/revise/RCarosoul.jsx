@@ -1,5 +1,4 @@
 import React, {useState, useEffect, useRef} from 'react';
-import './RCarosoul.css';
 import data from '../Carousel/data.json';
 
 export default function RCarosoul() {
@@ -71,3 +70,11 @@ return(
     </div>
 )
 }
+
+// Without useRef issues:
+// interval gets reset on every render
+// React function components don’t preserve local variables
+
+// useRef persists between renders
+// .current holds the same value always
+// Perfect for mutable values like timers

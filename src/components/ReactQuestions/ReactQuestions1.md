@@ -738,3 +738,13 @@ export default function App() {
  1️⃣3️⃣ How would you implement A/B testing without affecting current users?
  1️⃣4️⃣ A CSS animation is janky on mobile devices—how do you identify and fix the issue?
  1️⃣5️⃣ How do you handle real-time updates in a React application efficiently?
+
+===========================================================================================================
+
+ How do you make a web app responsive (media queries, relative units)?
+
+ 1. Use the Viewport Meta Tag: Without this, mobile browsers scale the page incorrectly.
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ This tells the browser to match the screen width.
+
+ 

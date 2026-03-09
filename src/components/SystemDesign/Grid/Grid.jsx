@@ -46,3 +46,17 @@ const Sheet = () => {
 }
 
 export default Sheet;
+
+// map → map (updates entire grid)
+// “You are updating the whole grid for one cell. Can you optimize?” Current: O(n × m)
+
+//   const updateSheetCell = (rowIndex,colIndex, value) => {
+//     const updated = [...sheetData];
+//     updated[rowIndex] = [...updated[rowIndex]];
+//     updated[rowIndex][colIndex] = value;
+//     setSheetData(updated);
+//   }
+//   “This only updates the required row instead of the entire grid.” Optimized: O(n)
+
+// “I used a 2D array to represent the grid where rows and columns map naturally. For updates, I used immutable state updates with nested mapping. I also added dynamic row and column insertion while maintaining consistent structure. 
+// This approach ensures React re-renders correctly and keeps the logic scalable.”

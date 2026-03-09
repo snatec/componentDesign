@@ -32,7 +32,6 @@ const StarRating = ({ totalStars = 5 }) => {
       {[...Array(totalStars)].map((_, i) => {
         const index = i + 1;
 
-        // 👇 KEY FIX: proper priority
         const currentValue = hover !== null ? hover : rating;
 
         const isFull = currentValue >= index;
@@ -88,3 +87,31 @@ export default StarRating;
 //  📦 (this span)
 //  ├── gray star
 //  └── colored star (on top)
+
+// if 3.5 currentValue ie rating/ hovered
+// const isFull = currentValue >= index;
+// const isHalf = currentValue === index - 0.5;
+
+
+//index/Star | isFull | isHalf | Result  |
+// | ---- | ------ | ------ | ------- |
+// | 1    | ✅      | ❌      | ⭐ full  |
+// | 2    | ✅      | ❌      | ⭐ full  |
+// | 3    | ✅      | ❌      | ⭐ full  |
+// | 4    | ❌      | ✅      | ⭐ half  |
+// | 5    | ❌      | ❌      | ☆ empty |
+
+// How to make it keyboard accessible?
+// 👉 Add:
+// tabIndex
+// onKeyDown
+// Example:
+// if (e.key === "ArrowRight") setRating(rating + 0.5);
+
+// What if hover = 0 instead of null?
+// 👉 Problem:
+// Component thinks user is hovering at 0
+// Stars won’t reset visually
+// ❌ Buggy UI
+
+// Why rating intialised 0? because 0 is a valid rating;

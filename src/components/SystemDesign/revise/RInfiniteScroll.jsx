@@ -32,7 +32,7 @@ const InfinteScroll = ({data, loading, setPageNo}) => {
 
         const observer = new IntersectionObserver((enteries)=> {
             // console.log('entries',enteries)
-            const entry = enteries[0];
+            const entry = enteries[0]; //You're only observing one element (the last image), so you take the first entry.
             // console.log('entry',entry)
         if(entry.isIntersecting && entry.target.getBoundingClientRect().bottom > window.innerHeight){
             observer.unobserve(entry.target);
@@ -59,3 +59,11 @@ const InfinteScroll = ({data, loading, setPageNo}) => {
         </div>
     )
 }
+
+// entry.isIntersecting → image is visible on screen
+// bottom > window.innerHeight → ensures it’s coming from below
+
+// Stop observing current last image (to avoid repeated triggers)
+// Increase page number → fetch more images
+// observer.unobserve(entry.target);
+// setPageNo(prev => prev + 1);
