@@ -22,6 +22,7 @@ import VirtualImageList from "../components/SystemDesign/VirtualImageList/Virtua
 import SeatSelection from "../components/SystemDesign/SeatSelection/SeatSelection";
 import StarRating from "../components/SystemDesign/StarRating/StarRating";
 import ToastNotification from "../components/SystemDesign/ToastNotification/ToastNotification";
+import FileExplorer2 from '../components/SystemDesign/FileExplorer2/FileExplorer2';
 
 const RoutingDashboard = () => {
   return (
@@ -48,6 +49,7 @@ const RoutingDashboard = () => {
         <Route path='/starRating' element={<StarRating/>} />
         <Route path='/toastNotification' element={<ToastNotification/>} />
         <Route path="/revise" element={<Revise/>} />
+        <Route path='/fileExplorer2' element={<FileExplorer2/>} />
       </Routes>
   );
 };
