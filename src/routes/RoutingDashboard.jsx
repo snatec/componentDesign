@@ -23,6 +23,7 @@ import SeatSelection from "../components/SystemDesign/SeatSelection/SeatSelectio
 import StarRating from "../components/SystemDesign/StarRating/StarRating";
 import ToastNotification from "../components/SystemDesign/ToastNotification/ToastNotification";
 import FileExplorer2 from '../components/SystemDesign/FileExplorer2/FileExplorer2';
+import CreditCardForm from '../components/SystemDesign/CreditCardForm/CreditCardForm';
 
 const RoutingDashboard = () => {
   return (
@@ -50,6 +51,7 @@ const RoutingDashboard = () => {
         <Route path='/toastNotification' element={<ToastNotification/>} />
         <Route path="/revise" element={<Revise/>} />
         <Route path='/fileExplorer2' element={<FileExplorer2/>} />
+        <Route path='/creditCardForm' element={<CreditCardForm/>} />
       </Routes>
   );
 };

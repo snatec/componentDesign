@@ -24,6 +24,7 @@ const Dashboard = () => {
     {name: 'starRating', url: '/starRating'},
     {name: 'toastNotification', url: '/toastNotification'},
     { name: 'fileExplorer2', url: '/fileExplorer2' },
+    {name: 'creditCardForm', url: '/creditCardForm'}
   ];
 
   return (
