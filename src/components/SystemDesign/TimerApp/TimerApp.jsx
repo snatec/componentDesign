@@ -28,7 +28,7 @@ export default function TimerApp() {
       // prevent multiple intervals
       intervalRef.current = setInterval(() => {
         setTime((prev) => prev + 1);
-      }, 1000);
+      }, 1000); //every 1 second
     }
 
     // cleanup function (VERY IMPORTANT)
@@ -58,3 +58,15 @@ export default function TimerApp() {
     </div>
   );
 }
+
+
+// I’m using useRef to store the interval ID so that it persists across renders without causing re-renders, 
+// and I can reliably clear the interval when needed.”
+
+
+// .padStart(2, "0")
+
+// This means:
+
+// Make the string at least 2 characters long
+// If shorter → add "0" at the start

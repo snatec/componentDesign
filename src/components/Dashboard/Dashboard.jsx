@@ -26,6 +26,7 @@ const Dashboard = () => {
     { name: 'fileExplorer2', url: '/fileExplorer2' },
     {name: 'creditCardForm', url: '/creditCardForm'},
     {name: 'timerApp', url: '/timerApp'},
+    {name: 'calculator', url: '/calculator'}
   ];
 
   return (
