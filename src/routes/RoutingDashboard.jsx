@@ -24,6 +24,7 @@ import StarRating from "../components/SystemDesign/StarRating/StarRating";
 import ToastNotification from "../components/SystemDesign/ToastNotification/ToastNotification";
 import FileExplorer2 from '../components/SystemDesign/FileExplorer2/FileExplorer2';
 import CreditCardForm from '../components/SystemDesign/CreditCardForm/CreditCardForm';
+import TimerApp from '../components/SystemDesign/TimerApp/TimerApp';
 
 const RoutingDashboard = () => {
   return (
@@ -52,6 +53,7 @@ const RoutingDashboard = () => {
         <Route path="/revise" element={<Revise/>} />
         <Route path='/fileExplorer2' element={<FileExplorer2/>} />
         <Route path='/creditCardForm' element={<CreditCardForm/>} />
+        <Route path='/timerApp' element={<TimerApp/>} />
       </Routes>
   );
 };
